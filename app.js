@@ -172,7 +172,7 @@ app.delete('/deletOrders',(req,res)=>{
 // connecting with mongodb
 MongoClient.connect(mongoUrl, (err,client) => {
     if(err) console.log("Error While Connecting");
-    db = client.db('augintern');
+    db = client.db('edureka');
     app.listen(port,()=>{
         console.log(`listening on port ${port}`)
     })
